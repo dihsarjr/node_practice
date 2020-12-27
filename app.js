@@ -36,6 +36,22 @@ function user(names,age,programer){
     return("name is " + names+" age is "+age+" are you a programer " + programer);
 
 }
+// create a object
+
+const person={
+
+  name: "rashid",
+  age: 30,   
+  // function
+  seyName(){
+      console.log("hi my name is "+this.name);
+  },
+  // function
+  seyAge: function(){
+    console.log("hi my name is "+this.age);
+}
+};
+
 
 
 
