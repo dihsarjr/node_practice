@@ -52,6 +52,39 @@ const person={
 }
 };
 
+// arrays
+
+const hobbies = ["footbal","programing"];
+
+
+// add a elament to arry
+
+hobbies.push("rojo");
+
+//for loop
+
+for(let hobby of hobbies){
+    console.log(hobby)
+}
+
+//to map 
+const data = hobbies.map(hobby1=>"hoby: "+hobby1);
+
+//spred oprator
+const copy  = ["dart",...hobbies];
+
+console.log(copy);
+
+
+// rest 
+
+const ney = (...neys)=>{
+    return neys;
+}
+
+console.log(ney(1,2,1,2,1,2,1,2,1,2,1,2,1,2,2,2,1,2,1,2,2,1,));
+
+
 
 
 
