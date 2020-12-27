@@ -20,7 +20,10 @@ userAge = 30;
 const userData = (userName)=>{
     return userName;
 };
-// if you have only one statement
+// if you have only one statement and also you have only one argumet you no need to add "()" 
+// only one argument
+const addRandom = a => a+2;
+// more than one argument  
 const add = (a,b)=>a+b;
 
 
