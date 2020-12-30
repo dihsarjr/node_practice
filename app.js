@@ -1,13 +1,18 @@
 const http = require("http");
+const express = require("express");
 
-const server =     http.createServer((request,response)=>{
-  var url =   request.url;
-  if(url === "/"){
-    response.write("<h1>hi this is ny first server 1 the main server..</h1>");
-  }else{
-    response.write("<h1>hi this is ny first server..</h1>");
-  }
- 
+const app = express();
+
+app.use("/no",(req,res,next)=>{
+  res.send("<h1>hello google.. </h1>");
 });
+app.use("/",(req,res,next)=>{
+  res.send("<h1>hello google..</h1>");
+  next();
+});
+
+
+
+const server =     http.createServer(app);
 
 server.listen(3000);
